@@ -3,7 +3,7 @@
 A simple yet unique Snake game built with Godot 4.  
 Unlike the classic snake, this snake rotates automatically and players can tap to change the direction to counterclockwise.
 
-![screenshot](screenshot.png) <!-- OPTIONAL: Add a screenshot.png in repo to show game -->
+<img src="screenshot.png" width="400">
 
 ## 🎮 How to Play
 
