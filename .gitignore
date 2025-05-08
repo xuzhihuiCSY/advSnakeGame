@@ -1,0 +1,21 @@
+# Godot 4+ specific ignores
+.godot/
+.import/
+.export/
+
+# Android build directories (if you export APK)
+android/build/
+android/.gradle/
+android/.cxx/
+android/.idea/
+
+# General build folders
+build/
+export/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# (Optional) Godot editor config caches (safe to ignore, Godot will recreate them)
+.editorconfig

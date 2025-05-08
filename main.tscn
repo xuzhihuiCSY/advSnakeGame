@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://ciwh1fispyl2w"]
+
+[ext_resource type="Script" uid="uid://bpdmq2xlkq3yg" path="res://snake.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://dsthila3jn7vb" path="res://food.gd" id="2_0xm2m"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Snake" type="Node2D" parent="."]
+script = ExtResource("1_ig7tw")
+
+[node name="Food" type="Node2D" parent="."]
+script = ExtResource("2_0xm2m")
+
+[node name="FoodBlock" type="ColorRect" parent="Food"]
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 0.299521, 0.0057395, 1)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="ScoreLabel" type="Label" parent="UI"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 71.0
+offset_bottom = 33.0
+theme_override_font_sizes/font_size = 80
+text = "Score: 0"
+
+[node name="GameOverLabel" type="Label" parent="UI"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -100.0
+offset_right = 200.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 60
+text = "Game Over"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
